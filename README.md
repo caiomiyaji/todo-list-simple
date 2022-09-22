@@ -4,7 +4,7 @@
 
 > First JavaScript project developed by me. Any feedback related to code improvements and corrections are appreciated!
 
-🔗 [Acesse aqui](https://caiomiyaji.github.io/todo-list-simple/)
+🔗 [Click here to access](https://caiomiyaji.github.io/todo-list-simple/)
 
 ## 🔧 Used technologies:
 
