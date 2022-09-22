@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #1d1d1d;
+    padding: 10px;
+    color: chocolate;
+    border-bottom: 5px solid chocolate;
+    border-radius: 0px 0px 10px 10px;
+}
+
+body{
+    height: 90vh;
+    background-color: antiquewhite;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgba(255, 246, 235, 0.507)
+}
+
+button{
+    cursor: pointer;
+}
+
+.inputs, .edit{
+    width: 100%;
+}
+
+.inputs label{
+    display: block;
+    font-weight: 500;
+}
+
+.inputs input, .edit input{
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: antiquewhite;
+    outline-color: chocolate;
+    width: 80%;
+}
+
+.inputs button{
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: chocolate;
+}
+
+.inputs i, .edit i{
+    color: antiquewhite;
+}
+
+.inputs > p{
+    color: rgb(173, 0, 0);
+    font-weight: 500;
+}
+
+.edit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit input{
+    width: 100%;
+}
+
+.edit button{
+    height: 45px;
+    background-color: chocolate;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+}
+
+.edit button i{
+    color: antiquewhite;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.results::-webkit-scrollbar{
+    width: 10px;
+}
+
+.results::-webkit-scrollbar-track{
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.results::-webkit-scrollbar-thumb{
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+.result, .done{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(255, 220, 174);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.done {
+    background-color: chocolate;
+    box-shadow: inset 2px 5px 25px 5px rgba(0, 0, 0, 0.13);
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.result > div{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.result > div button{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #fff;
+}
+
+.results button i{
+    pointer-events: none;
+}
+
+.hidden{
+    display: none;
+}

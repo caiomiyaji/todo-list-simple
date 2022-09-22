@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>To-do List</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="#">
+                <fieldset>
+                    <legend>To-do List</legend>
+                    <div class="inputs">
+                        <label for="item">Nome do item</label>
+                        <input type="text" name="item" id="item">
+                        <button id="addButton"><i class="fa-solid fa-add"></i></button>
+                        <p class="hidden" id="error-msg">Insira um valor no input</p>
+                    </div>
+
+                    <div class="edit hidden">
+                        <label for="item-name">Editar nome</label>
+                        <input type="text" name="item-name" id="item-name">
+                        <button id="save-button"><i class="fa-solid fa-circle-check"></i></button>
+                        <button id="cancel-button">Cancelar</button>
+                    </div>
+                </fieldset>
+                <div class="results">
+                    <div class="result" id="item0">
+                        <h4>Criação de Design</h4>
+                        <div>
+                            <button id="finish-button"><i class="fa-solid fa-check"></i></button>
+                            <button id="edit-button"><i class="fa-solid fa-pen"></i></button>
+                            <button id="delete-button"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="result" id="item1">
+                        <h4>Criação de landing page</h4>
+                        <div>
+                            <button id="finish-button"><i class="fa-solid fa-check"></i></button>
+                            <button id="edit-button"><i class="fa-solid fa-pen"></i></button>
+                            <button id="delete-button"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
